@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day'); 
 body {
-  font-family: sans-serif;
+  font-family: "poppins";
   margin: 0;
   background: #f2f2f2;
 }
@@ -7,11 +9,25 @@ body {
 h1 {
   text-align: center;
   margin-top: 50px;
+  font-size: 90px; 
+  font-family: 'Dawning of a New Day', cursive;
+  font-weight: 700; 
 }
 
+/* center items in the middle */
+nav {
+  display: block; 
+  text-align: center; 
+}
+
+/* create border on the bottom with trim */
 p {
-  text-align: center;
+  display: inline-flex;
+  justify-content: center; 
+  font-size: 22px; 
   margin-bottom: 35px;
+  font-family: "poppins"; 
+  border-bottom: 1px dotted #d7dbdd; 
 }
 
 #btn_area {
@@ -29,9 +45,12 @@ p {
   text-transform: uppercase; 
 }
 
+/* hover effect on button */ 
+
 .btn:hover {
-  background: #e1e1e1;
-  cursor: pointer;
+background-image:none;
+background-color:#aef;
+cursor: pointer; 
 }
 
 .active {
