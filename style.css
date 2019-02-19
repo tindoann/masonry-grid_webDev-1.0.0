@@ -70,8 +70,7 @@ cursor: pointer;
 }
 
 .item {
-  display: inline-block;
-  background: #fff;
+  background-color: transparent;
   padding: 1em;
   margin: 0 0 1.5em;
   width: 100%;
@@ -123,4 +122,40 @@ h4 {
     -webkit-column-count: 4;
     column-count: 4;
   }
+}
+
+/* flip card */
+
+.flip-container{
+  perspective: 1000px; 
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg); 
+}
+
+.flipper {
+  position: relative;
+  transition: 0.6s; 
+  transform-style: preserve-3d; 
+}
+
+.front .back {
+  position: absolute; 
+  backface-visibility: hidden; 
+  top: 0; 
+  left: 0; 
+}
+
+.front {
+  z-index: 2; 
+  transform: rotateY(0deg);
+}
+
+.back {
+  display: none; 
+  background: #fff; 
+  color: #000; 
+  transform: rotateY(180deg); 
+  z-index: 1; 
 }
